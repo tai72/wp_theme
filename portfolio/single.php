@@ -14,23 +14,47 @@
     </head>
     <body>
 
-        <?php 
-        if (have_posts()): 
-            while (have_posts()): the_post(); 
-        ?>
+        <section id="posted">
+            <?php 
+            if (have_posts()): 
+                while (have_posts()): the_post(); 
+            ?>
+                <article>
+                    <div class="wrapper-post-header">
+                        <div class="date-and-title disp-flex-row">
+                            <div class="post-date disp-flex-col">
+                                <p class="post-y"><?php the_time('Y'); ?></p>
+                                <p class="post-m-d"><?php the_time('n/j'); ?></p>
+                            </div>
+                            <span></span>
+                            <div class="title">
+                                <h2><?php the_title(); ?></h2>
+                            </div>
+                        </div>
+                        <div class="wrapper-category disp-flex-row">
+                            <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/images/tag.png" alt="category-tag">
+                            <div class="category-links">
+                                <?php the_category(); ?>
+                            </div>
+                        </div>
+                    </div>
 
-            <h1><?php the_title(); ?></h1>
-            <section><?php the_content(); ?></section>
+                    <?php if (has_post_thumbnail()): ?>
+                    <div class="wrapper-thumbnail">
+                        <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php get_the_title(); ?>">
+                    </div>
+                    <?php endif; ?>
 
-            <div><?php the_time('F jS, Y'); ?></div>
+                    <div id="posted-content">
+                        <?php the_content(); ?>
+                    </div>
+                </article>
 
-            <!-- 投稿のカテゴリーをコンマ区切りで表示 -->
-            <p class="postmetadata">Posted in <?php the_category(', '); ?></p>
-
-        <?php
-            endwhile;
-        endif; 
-        ?>
+            <?php
+                endwhile;
+            endif; 
+            ?>
+        </section>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
