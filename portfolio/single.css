@@ -53,6 +53,25 @@ h3 {
 
 p {
     font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+a[data-type="URL"] {
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+img {
+    margin: 3rem 0;
+}
+
+ul {
+    margin: 1rem 0;
+    padding-left: 3rem;
+}
+
+li {
+    font-size: 1.6rem;
 }
 
 .disp-flex-row {
@@ -111,6 +130,7 @@ p {
 
 .title h2 {
     font-size: 24px;
+    color: var(--black);
 }
 
 .wrapper-category {
@@ -124,6 +144,7 @@ p {
     width: 20px;
     height: 20px;
     margin-right: 5px;
+    margin: 0 5px 0 0;
 }
 
 .category-links {
@@ -133,7 +154,8 @@ p {
 .category-links ul {
     display: flex;
     flex-direction: row;
-
+    list-style: none;
+    padding: 0;
 }
 
 .category-links a {
@@ -163,4 +185,17 @@ p {
 
 #posted-content {
     margin-top: 100px;
+}
+
+#posted-content h2 {
+    margin: 3rem 0;
+    padding: 1rem 2rem;
+    border-left: 5px solid var(--dark-blue);
+    background: #f4f4f4;
+}
+
+#posted-content h3 {
+    width: fit-content;
+    margin: 5rem 0 2rem 0;
+    border-bottom: 2px solid var(--dark-blue);
 }

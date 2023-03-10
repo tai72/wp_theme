@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>tai`s portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/footer.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/single.css">
 
         <!-- jQuery読み込み -->
@@ -55,6 +56,8 @@
             endif; 
             ?>
         </section>
+
+        <?php get_footer(); ?>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>

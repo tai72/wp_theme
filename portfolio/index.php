@@ -5,6 +5,7 @@
         <title>tai`s portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/mystyle.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/footer.css">
 
         <!-- jQuery読み込み -->
         <!-- <?php wp_enqueue_script('jquery'); ?> -->
@@ -201,7 +202,7 @@
                                 どんな技術を使用したか、どんなコンセプトのもと作成したかなども記載しております。
                             </p>
                         </div>
-                        <a href="#" class="fv-main-link disp-flex-col">
+                        <a href="<?php echo get_page_link( 30 ); ?>" class="fv-main-link disp-flex-col">
                             <div class="disp-flex-row">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/next.png" alt="next">
                                 <p>移動する</p>
@@ -360,6 +361,8 @@
                 </div>
             </div>
         </section>
+
+        <?php get_footer(); ?>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
