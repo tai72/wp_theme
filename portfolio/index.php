@@ -258,42 +258,21 @@
                     <div class="skill-content skill-backend">
                         <h3 class="disp-flex-row">Back-end</h3>
                         <div class="skills disp-flex-col">
-                            <div class="skill">
-                                <div class="skill-name">python</div>
-                                <div class="skill-explain">
-                                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-name">python2</div>
-                                <div class="skill-explain">
-                                    <p>
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                    </p>
-                                </div>
+                            <div class="skill disp-flex-row">
+                                <div class="skill-name">python3</div>
+                                <div class="skill-name">django</div>
+                                <div class="skill-name">Next.js</div>
                             </div>
                         </div>
                     </div>
                     <div class="skill-content skill-frontend">
                         <h3 class="disp-flex-row">Front-end</h3>
                         <div class="skills disp-flex-col">
-                            <div class="skill">
-                                <div class="skill-name">python</div>
-                                <div class="skill-explain">
-                                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-name">python2</div>
-                                <div class="skill-explain">
-                                    <p>
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                    </p>
-                                </div>
+                            <div class="skill disp-flex-row">
+                                <div class="skill-name">HTML・CSS</div>
+                                <div class="skill-name">JavaScript</div>
+                                <div class="skill-name">React</div>
+                                <div class="skill-name">TypeScript</div>
                             </div>
                         </div>
                     </div>
@@ -304,6 +283,7 @@
                                 <div class="skill-name">GCP</div>
                                 <div class="skill-name">cloudfunstions</div>
                                 <div class="skill-name">MySQL</div>
+                                <div class="skill-name">Figma</div>
                             </div>
                         </div>
                     </div>
@@ -357,6 +337,29 @@
                                 御社の規則に則ったマークアップを行います。
                             </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About me -->
+
+        <section id="section-about-me" class="disp-flex-col">
+            <div class="container-about-me">
+                <div class="wrapper-h2">
+                    <h2>bout Me</h2>
+                </div>
+                <div class="about-me-content disp-flex-row">
+                    <div class="wrapper-about-me-img">
+                        <img class="my-icon" src="<?php echo get_template_directory_uri(); ?>/images/myIcon.jpg" alt="myIcon">
+                    </div>
+                    <div class="wrapper-about-me-txt">
+                        <p>
+                            機械学習分野を取っ掛かりとして、Webアプリケーション、Web制作など幅広く行なっております。<br>
+                            好奇心が強いので、「こんなの出来ない？」といったお気軽なお問い合わせもどしどし待ってます。<br>
+                            真摯にご対応させていたきます。<br>
+                            趣味は登山、スポーツ、車やバイクなどです！
+                        </p>
                     </div>
                 </div>
             </div>
