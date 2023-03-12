@@ -151,6 +151,10 @@ p {
     opacity: .5;
 }
 
+_:lang(x)::-internal-media-controls-overlay-cast-button, .date-posted p {
+    font-size: 11px;
+}
+
 .clock-icon {
     width: 12px;
     height: 12px;
@@ -159,14 +163,25 @@ p {
 }
 
 .title-post {
+    font-size: 20px;
     padding-left: 15px;
     padding-top: 5px;
+}
+
+_:lang(x)::-internal-media-controls-overlay-cast-button, .title-post {
+    font-size: 18px;
 }
 
 .excerpt {
     display: block;
     width: 100%;
+    font-size: 16px;
     padding: 10px 10px 0 30px;
+    line-height: 18px;
+}
+
+_:lang(x)::-internal-media-controls-overlay-cast-button, .excerpt {
+    font-size: 14px;
 }
 
 .link-detail-btn {
