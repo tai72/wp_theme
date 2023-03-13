@@ -13,6 +13,7 @@
         <?php wp_head(); ?>
     </head>
     <body>
+        <p id="windowSize"></p>
         <section id="section-post">
             <div class="container-post">
                 <div class="wrapper-header">
@@ -60,7 +61,7 @@
                             </div>
                             <h3 class="title-post"><?php the_title(); ?></h3>
                             <p class="excerpt"><?php echo get_the_excerpt(); ?></p>
-                            <a class="link-detail-btn">
+                            <a class="link-detail-btn" href="<?php the_permalink(); ?>">
                                 <p>続きを読む ></p>
                             </a>
                         </div>

@@ -120,7 +120,8 @@ p {
 }
 
 .post {
-    width: 1000px;
+    width: 80vw;
+    max-width: 1000px;
     height: 200px;
     background-color: #ffffff;
     margin: 30px 0;
@@ -204,4 +205,51 @@ _:lang(x)::-internal-media-controls-overlay-cast-button, .excerpt {
 
 .link-detail-btn p {
     font-size: 14px;
+}
+
+@media screen and (max-width: 1015px) {
+    .post {
+        width: fit-content;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .wrapper-thumbnail {
+        width: 400px;
+        height: 200px;
+    }
+
+    .wrapper-post-content {
+        width: 400px;
+        height: fit-content;
+        padding-right: 10px;
+    }
+
+    .excerpt {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .post {
+        width: fit-content;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .wrapper-thumbnail {
+        width: 80vw;
+        max-width: 300px;
+        min-width: 200px;
+        height: 50%;
+    }
+
+    .wrapper-post-content {
+        width: 300px;
+        height: fit-content;
+    }
+
+    .excerpt {
+        margin-bottom: 70px;
+    }
 }
