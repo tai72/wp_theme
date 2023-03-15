@@ -219,7 +219,7 @@
                                 お問い合わせはこちらから。
                             </p>
                         </div>
-                        <a href="<?php echo get_page_link( 17 ); ?>" class="fv-main-link disp-flex-col">
+                        <a href="<?php echo get_page_link( 43 ); ?>" class="fv-main-link disp-flex-col">
                             <div class="disp-flex-row">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/next.png" alt="next">
                                 <p>移動する</p>
