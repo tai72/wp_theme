@@ -1,0 +1,256 @@
+:root {
+    --dark-blue: #005497;
+    --light-blue: #20A4AF;
+    --dark-grey: #B0B2AB;
+    --light-grey: #C7CED3;
+    --dark-yellow: #EBC71C;
+    --light-yellow: #FFEF00;
+    --red: #D90A27;
+    --black: #2B2D30;
+}
+
+#windowSize {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    font-size: 2rem;
+    color: var(--red);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;    /* 10px -> 1rem */
+}
+
+body {
+    font-size: 1.6em;
+    text-size-adjust: 100%;
+}
+
+html,
+body {
+    width: 100vw!important;
+    font-family: -apple-system, Calibri、Candara、Segoe、Segoe UI、Optima、Arial、sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 3.8rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.wrapper-h2 {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.wrapper-h3 {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.disp-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.disp-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* posts */
+
+#section-contact {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-post {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.wrapper-header {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 0.8rem 0;
+    margin-bottom: 20px;
+    background-image: linear-gradient(90deg, var(--light-blue) 0 20%, #dedede 20%);
+    background-repeat: no-repeat;
+    background-size: 100% 5%;
+    background-position: bottom;
+}
+
+.wrapper-post {
+    width: fit-content;
+    background-color: #f4f3f3;
+    padding: 30px;
+}
+
+.post {
+    width: 80vw;
+    max-width: 1000px;
+    height: 200px;
+    background-color: #ffffff;
+    margin: 30px 0;
+}
+
+.wrapper-thumbnail {
+    width: 400px;
+    height: 100%;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper-post-content {
+    position: relative;
+    width: calc(100% - 400px);
+}
+
+.date-posted {
+    align-items: center;
+    padding: 10px;
+}
+
+.date-posted p {
+    font-size: 12px;
+    opacity: .5;
+}
+
+_:lang(x)::-internal-media-controls-overlay-cast-button, .date-posted p {
+    font-size: 11px;
+}
+
+.clock-icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 1.5px;
+    opacity: .5;
+}
+
+.title-post {
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+_:lang(x)::-internal-media-controls-overlay-cast-button, .title-post {
+    font-size: 18px;
+}
+
+.excerpt {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px 0 30px;
+    line-height: 18px;
+}
+
+_:lang(x)::-internal-media-controls-overlay-cast-button, .excerpt {
+    font-size: 14px;
+}
+
+.link-detail-btn {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: fit-content;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 20px;
+    right: 30px;
+    border: solid 1px var(--black);
+    transition-duration: .2s;
+}
+
+.link-detail-btn:hover {
+    background-color: var(--dark-blue);
+    color: #ffffff;
+}
+
+.link-detail-btn p {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1015px) {
+    .post {
+        width: fit-content;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .wrapper-thumbnail {
+        width: 400px;
+        height: 200px;
+    }
+
+    .wrapper-post-content {
+        width: 400px;
+        height: fit-content;
+        padding-right: 10px;
+    }
+
+    .excerpt {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .post {
+        width: fit-content;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .wrapper-thumbnail {
+        width: 80vw;
+        max-width: 300px;
+        min-width: 200px;
+        height: 50%;
+    }
+
+    .wrapper-post-content {
+        width: 300px;
+        height: fit-content;
+    }
+
+    .excerpt {
+        margin-bottom: 70px;
+    }
+}

@@ -185,7 +185,7 @@
                                 私のスキルセットや今まで経験した言語などをご紹介いたします。<br>
                             </p>
                         </div>
-                        <a href="#" class="fv-main-link disp-flex-col">
+                        <a href="<?php echo esc_url( home_url( '/#section-skill' ) ); ?>" class="fv-main-link disp-flex-col">
                             <div class="disp-flex-row">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/next.png" alt="next">
                                 <p>移動する</p>
@@ -211,14 +211,14 @@
                     </div>
                     <div class="fv-card">
                         <div class="wrapper-fv-card-header disp-flex-col">
-                            <h2>自己紹介</h2>
+                            <h2>お問い合わせ</h2>
                         </div>
                         <div class="wrapper-fv-card-explain">
                             <p>
-                                私自身の経歴など、簡単な自己紹介です。
+                                お問い合わせはこちらから。
                             </p>
                         </div>
-                        <a href="#" class="fv-main-link disp-flex-col">
+                        <a href="<?php echo get_page_link( 17 ); ?>" class="fv-main-link disp-flex-col">
                             <div class="disp-flex-row">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/next.png" alt="next">
                                 <p>移動する</p>
