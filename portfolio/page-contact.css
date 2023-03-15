@@ -2,7 +2,8 @@
 
 #section-contact {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    margin-top: 5rem;
 }
 
 .container-post {
@@ -22,143 +23,56 @@
     background-position: bottom;
 }
 
-.wrapper-post {
-    width: fit-content;
-    background-color: #f4f3f3;
-    padding: 30px;
-}
-
-.post {
+article {
     width: 80vw;
-    max-width: 1000px;
-    height: 200px;
-    background-color: #ffffff;
-    margin: 30px 0;
-}
-
-.wrapper-thumbnail {
-    width: 400px;
-    height: 100%;
-}
-
-.thumbnail {
-    width: 100%;
-    height: 100%;
-}
-
-.wrapper-post-content {
-    position: relative;
-    width: calc(100% - 400px);
-}
-
-.date-posted {
-    align-items: center;
-    padding: 10px;
-}
-
-.date-posted p {
-    font-size: 12px;
-    opacity: .5;
-}
-
-_:lang(x)::-internal-media-controls-overlay-cast-button, .date-posted p {
-    font-size: 11px;
-}
-
-.clock-icon {
-    width: 12px;
-    height: 12px;
-    margin-right: 1.5px;
-    opacity: .5;
-}
-
-.title-post {
-    font-size: 20px;
-    padding-left: 15px;
-    padding-top: 5px;
-}
-
-_:lang(x)::-internal-media-controls-overlay-cast-button, .title-post {
-    font-size: 18px;
-}
-
-.excerpt {
-    display: block;
-    width: 100%;
-    font-size: 16px;
-    padding: 10px 10px 0 30px;
-    line-height: 18px;
-}
-
-_:lang(x)::-internal-media-controls-overlay-cast-button, .excerpt {
-    font-size: 14px;
-}
-
-.link-detail-btn {
-    display: block;
-    position: absolute;
-    width: 100px;
+    max-width: 600px;
     height: fit-content;
-    text-align: center;
-    padding: 10px 0;
-    bottom: 20px;
-    right: 30px;
-    border: solid 1px var(--black);
-    transition-duration: .2s;
+    margin: 0 auto;
 }
 
-.link-detail-btn:hover {
-    background-color: var(--dark-blue);
+.notion {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 5px;
+}
+
+form {
+    background-color: #f3f1f1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+input {
+    width: 100%;
+    height: 28px;
+    padding-left: .2rem;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    height: 35px;
+    background-color: var(--light-blue);
     color: #ffffff;
+    border: solid 1px var(--black);
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.link-detail-btn p {
-    font-size: 14px;
+textarea {
+    width: 100%;
+    resize: none;
+    padding: 1rem;
+    font-size: 16px;
 }
 
-@media screen and (max-width: 1015px) {
-    .post {
-        width: fit-content;
-        height: fit-content;
-        flex-direction: column;
-    }
-
-    .wrapper-thumbnail {
-        width: 400px;
-        height: 200px;
-    }
-
-    .wrapper-post-content {
-        width: 400px;
-        height: fit-content;
-        padding-right: 10px;
-    }
-
-    .excerpt {
-        margin-bottom: 70px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .post {
-        width: fit-content;
-        height: fit-content;
-        flex-direction: column;
-    }
-
-    .wrapper-thumbnail {
-        width: 80vw;
-        max-width: 300px;
-        min-width: 200px;
-        height: 50%;
-    }
-
-    .wrapper-post-content {
-        width: 300px;
-        height: fit-content;
-    }
-
-    .excerpt {
-        margin-bottom: 70px;
+@media screen and (max-width: 768px) {
+    article {
+        width: 90vw;
     }
 }

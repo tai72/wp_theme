@@ -25,7 +25,13 @@
                     <div class="wrapper-header">
                         <h3><?php the_title(); ?></h3>
                     </div>
-                    <div id="posted-content">
+                    <div class="notion">
+                        <p>
+                            お問い合わせいただき誠にありがとうございます。<br>
+                            お仕事のことやご質問までお気軽にお問い合わせください。
+                        </p>
+                    </div>
+                    <div id="contact-content">
                         <?php the_content(); ?>
                     </div>
                 </article>
